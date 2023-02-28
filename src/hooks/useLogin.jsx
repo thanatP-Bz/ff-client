@@ -10,7 +10,7 @@ export const useLogin = () => {
 
     try {
       const response = await axios.post(
-        "https://ff-server-5klr.onrender.com//api/auth/login",
+        "https://ff-server-5klr.onrender.com/api/auth/login",
         currentUser
       );
       let { user, token } = response.data;
