@@ -21,7 +21,7 @@ export const useLogin = () => {
     } catch (error) {
       dispatch({
         type: LOGIN_ERROR,
-        payload: { message: error.response.data },
+        payload: { message: error.response.data.msg },
       });
     }
     clearAlert();

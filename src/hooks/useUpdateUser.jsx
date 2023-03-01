@@ -51,7 +51,7 @@ export const useUpdateUser = () => {
     } catch (error) {
       dispatch({
         type: UPDATE_ERROR,
-        payload: { message: error.response.data },
+        payload: { message: error.response.data.msg },
       });
     }
     clearAlert();

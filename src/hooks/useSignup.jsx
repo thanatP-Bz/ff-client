@@ -25,7 +25,7 @@ export const useSignup = () => {
       console.log(error.response);
       dispatch({
         type: SIGNUP_ERROR,
-        payload: { message: error.response.data },
+        payload: { message: error.response.data.msg },
       });
     }
     clearAlert();
