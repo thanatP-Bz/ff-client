@@ -67,7 +67,7 @@ const Login = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center w-full mx-4 md:mx-0">
+      <div className="flex flex-col justify-center items-center w-full md:mx-0">
         <form onSubmit={onSubmitHandler} className="form">
           <h3 className="form-h3">Log in</h3>
           {showAlert && <Alert />}
