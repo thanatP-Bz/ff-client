@@ -10,7 +10,7 @@ export const useSignup = () => {
 
     try {
       const response = await axios.post(
-        "https://ff-server-4fuh.onrender.com//api/auth/signup",
+        "https://ff-server-4fuh.onrender.com/api/auth/signup",
         currentUser
       );
       let { user, token } = response.data;
