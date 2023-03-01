@@ -9,7 +9,10 @@ export const useLogin = () => {
     dispatch({ type: LOGIN_BEGIN });
 
     try {
-      const response = await axios.post("/api/auth/login", currentUser);
+      const response = await axios.post(
+        "https://ff-server-5klr.onrender.com/api/auth/login",
+        currentUser
+      );
       let { user, token } = response.data;
       dispatch({ type: LOGIN_SUCCESS, payload: { user, token } });
 
