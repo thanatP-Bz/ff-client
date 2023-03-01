@@ -17,6 +17,8 @@ export const useSignup = () => {
       let { user, token } = response.data;
       dispatch({ type: SIGNUP_SUCCESS, payload: { user, token } });
 
+      console.log(user, token);
+
       //set to local storage
       setToLocalStorage(user, token);
     } catch (error) {
