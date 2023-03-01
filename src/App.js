@@ -30,7 +30,7 @@ function App() {
           }
         />
         <Route
-          path="/About"
+          path="/about"
           element={
             <ProtectedRoutes>
               <About />

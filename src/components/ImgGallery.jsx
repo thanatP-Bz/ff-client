@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+
 import k1 from "../images/k-1.jpg";
 import k2 from "../images/k-2.jpg";
 import k3 from "../images/k-3.jpg";
