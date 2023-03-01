@@ -9,8 +9,8 @@ export const useSignup = () => {
     dispatch({ type: SIGNUP_BEGIN });
 
     try {
-      const response = await axios.get(
-        "https://ff-server-4fuh.onrender.com/",
+      const response = await axios.post(
+        "https://ff-server-4fuh.onrender.com/api/auth/signup",
         currentUser
       );
 
@@ -23,7 +23,7 @@ export const useSignup = () => {
       console.log(error.response);
       dispatch({
         type: SIGNUP_ERROR,
-        payload: { message: error.response.data.msg },
+        payload: { message: error.response.data },
       });
     }
     clearAlert();
