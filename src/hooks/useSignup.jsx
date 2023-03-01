@@ -9,12 +9,11 @@ export const useSignup = () => {
     dispatch({ type: SIGNUP_BEGIN });
 
     try {
-      const response = await axios.post(
-        "https://ff-server-4fuh.onrender.com/api/auth/signup",
+      const response = await axios.get(
+        "https://ff-server-4fuh.onrender.com/",
         currentUser
       );
 
-      console.log(response.data);
       let { user, token } = response.data;
       dispatch({ type: SIGNUP_SUCCESS, payload: { user, token } });
 
