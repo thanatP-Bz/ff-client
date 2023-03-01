@@ -13,14 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <ProtectedRoutes>
-              <Home />
-            </ProtectedRoutes>
-          }
-        />
+        <Route path="/" element={<Home />} />
         <Route
           path="/gallery"
           element={
