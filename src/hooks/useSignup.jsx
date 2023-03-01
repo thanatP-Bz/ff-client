@@ -13,6 +13,8 @@ export const useSignup = () => {
         "https://ff-server-4fuh.onrender.com/api/auth/signup",
         currentUser
       );
+
+      console.log(response.data);
       let { user, token } = response.data;
       dispatch({ type: SIGNUP_SUCCESS, payload: { user, token } });
 
