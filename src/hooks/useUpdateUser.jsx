@@ -38,7 +38,10 @@ export const useUpdateUser = () => {
     dispatch({ type: UPDATE_BEGIN });
 
     try {
-      const { data } = await authFetch.patch("/auth/updateuser", currentUser);
+      const { data } = await authFetch.patch(
+        "https://ff-server-4fuh.onrender.com/auth/updateuser",
+        currentUser
+      );
 
       const { user, token } = data;
 
