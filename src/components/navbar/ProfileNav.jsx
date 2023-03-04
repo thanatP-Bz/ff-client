@@ -16,8 +16,8 @@ const ProfileNav = () => {
 
   return (
     <div>
-      <div className="flex py-[0.3px] px-3 rounded-md bg-[#10ac84]">
-        <p className="text-white font-sm mr-2 py-2 px-1 md:flex">
+      <div className="flex py-[0.3px] px-2 rounded-md  bg-[#10ac84]">
+        <p className="text-white mr-2 py-2 px-1 truncate md:w-16 w-8 md:flex">
           {user ? user.name : "email"}
         </p>
         <button className="mt-1" onClick={() => setProfileOpen(!profileOpen)}>

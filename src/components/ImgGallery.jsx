@@ -21,7 +21,7 @@ const ImgGallery = () => {
   return (
     <>
       <div className="mx-[7%] my-[7%]">
-        <h1 className="text-5xl font font-['Lobster'] text-center py-4 mb-10">
+        <h1 className="text-5xl font font-['Lobster'] text-center py-4 mb-10 md:mt-0 mt-20">
           Galley
         </h1>
         <div className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

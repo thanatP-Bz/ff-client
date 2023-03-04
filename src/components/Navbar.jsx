@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className="relative">
       <nav className="bg-gray-700 w-[100vw] py-3 fixed top-0 left-0 z-20 ">
-        <div className="flex justify-between mx-[7%]">
+        <div className="flex item-center justify-between mx-[7%]">
           <div className="flex relative">
             {/* button small screen */}
 

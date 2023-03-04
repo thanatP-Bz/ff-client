@@ -8,7 +8,7 @@ const About = () => {
     <>
       <Navbar />
       <div className="my-[7%] mx-[7%]">
-        <div className="grid grid-cols-1 md:grid-cols-5">
+        <div className="grid grid-cols-1 md:grid-cols-5 mt-20 md:mt-0">
           <div className=" z-10 py-10 px-5 shadow-lg bg-white rounded-md text-center mr-0 md:mr-16 md:col-start-1 md:col-end-4 md:row-start-1 md:row-end-2 md:self-center">
             <h1 className="text-4xl font-['Lobster'] ">
               What I would like to say

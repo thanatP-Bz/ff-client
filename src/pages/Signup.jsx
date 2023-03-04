@@ -93,7 +93,7 @@ const Signup = () => {
           />
 
           <button type="submit" className="form-btn">
-            Submit
+            {isLoading ? "Please Wait..." : "submit"}
           </button>
 
           <div className="text-center mt-3">
