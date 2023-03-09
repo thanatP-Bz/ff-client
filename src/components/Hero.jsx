@@ -9,8 +9,6 @@ const Hero = () => {
 
   return (
     <div className=" w-full h-screen" style={bgImg}>
-      {/*  <div className="absolute inset-0 bg-slate-900 bg-opacity-50"></div> */}
-
       <div className="mt-4 flex justify-center items-center flex-col h-screen text-center text-white">
         <h1 className="text-6xl font-bold pb-2 font-['Lobster']">
           This is Homepage

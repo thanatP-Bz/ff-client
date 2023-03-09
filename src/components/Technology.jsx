@@ -8,7 +8,7 @@ const Technology = () => {
     <div className="bg-gray-100 p-[10px]">
       <div className="mx-[7%] my-[7%]">
         <h1 className="text-4xl font font-['Lobster'] text-center mb-10 p-2 text-gray-700">
-          Programming Languages for creating this website
+          Tech stacks
         </h1>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           <button className="tech-box">

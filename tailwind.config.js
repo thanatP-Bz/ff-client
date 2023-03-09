@@ -24,8 +24,8 @@ module.exports = {
   },
 
   extend: {
-    outlineWidth: {
-      5: "0.5px",
+    colors: {
+      "main-color": "var(--main-color)",
     },
   },
 };

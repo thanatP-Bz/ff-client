@@ -1,10 +1,26 @@
 import React from "react";
-import { motion } from "framer-motion";
 import eventImg from "../images/event.jpg";
 
 const Event = () => {
+  const bgImg = {
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${eventImg})`,
+    backgroundSize: "cover",
+  };
   return (
-    <div className=" mb-[10%] w-full h-[100vh] relative md:h-[85vh] lg:h-[85vh]">
+    <div className=" w-full h-[85vh]" style={bgImg}>
+      <div className=" flex justify-center items-center flex-col h-screen text-center text-white">
+        <h1 className="text-6xl font-bold pb-2 font-['Lobster']">
+          The good memories events
+        </h1>
+        <p className="text-lg md:my-4 w-full max-w-[700px]">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt et
+          magnam molestias debitis, ipsa sapiente. Lorem ipsum dolor sit amet,
+          consectetur adipisicing
+        </p>
+        <button className="btn">Read More</button>
+      </div>
+    </div>
+    /*   <div className=" mb-[10%] w-full h-[100vh] relative md:h-[85vh] lg:h-[85vh]">
       <img
         className="w-full h-full object-cover object-top absolute inset-0"
         src={eventImg}
@@ -27,7 +43,7 @@ const Event = () => {
         </p>
         <button className="btn whitespace-nowrap">Read More</button>
       </motion.div>
-    </div>
+    </div> */
   );
 };
 

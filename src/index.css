@@ -4,6 +4,12 @@
 
 @layer components {
   /* global */
+  .root,
+  #root,
+  #docs-root {
+    --main-color: #188eb5;
+  }
+
   .btn {
     @apply text-lg my-5 py-2 px-12 text-white rounded-md bg-[#10ac84]  hover:hover:bg-[#5ccaae];
   }
