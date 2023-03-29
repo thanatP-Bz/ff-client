@@ -10,7 +10,7 @@ const Event = () => {
     <div className=" w-full h-[85vh]" style={bgImg}>
       <div className=" flex justify-center items-center flex-col h-screen text-center text-white">
         <h1 className="text-6xl font-bold pb-2 font-['Lobster']">
-          The good memories events
+          The good olds memories
         </h1>
         <p className="text-lg md:my-4 w-full max-w-[700px]">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt et

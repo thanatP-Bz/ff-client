@@ -18,7 +18,6 @@ const Hero = () => {
           magnam molestias debitis, ipsa sapiente. Lorem ipsum dolor sit amet,
           consectetur adipisicing
         </p>
-        <button className="btn">Read More</button>
       </div>
     </div>
   );
