@@ -1,16 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
-import friendImg from "../images/friend.jpg";
+import friendImg from "../images/goodMemo.JPG";
 
 const Message = () => {
   return (
-    <div className="my-[3%] mx-[7%]">
+    <div className="my-[7%] mx-[7%]">
       <div className="grid grid-cols-1 md:grid-cols-5">
         <motion.div
           initial={{ x: -500 }}
           animate={{ x: 0 }}
           transition={{ ease: "easeOut", duration: 1 }}
-          className=" z-10 p-5 shadow-lg bg-white rounded-md text-center mr-0 md:mr-10 md:col-start-1 md:col-end-4 md:row-start-1 md:row-end-2 md:self-center"
+          className=" z-10 mt-20 p-5 shadow-lg bg-white rounded-md text-center mr-0 md:mr-10 md:col-start-1 md:col-end-4 md:row-start-1 md:row-end-2 md:self-center"
         >
           <h1 className="text-4xl font-['Lobster'] ">
             What I would like to say
@@ -31,7 +31,7 @@ const Message = () => {
         >
           <img
             src={friendImg}
-            className="col-span-3 object-cover rounded-md"
+            className="col-span-3 object-cover w-screen max-h-[80vh]  rounded-md"
             alt="friend"
           />
         </motion.div>

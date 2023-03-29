@@ -14,7 +14,7 @@ const About = () => {
           <div className="h-full">
             <img
               src={family1}
-              className="object-cover rounded-md max-h-[80vh] w-screen"
+              className="object-cover rounded-md max-h-[100vh] w-screen"
               alt="friend"
             />
           </div>

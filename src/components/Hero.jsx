@@ -1,9 +1,9 @@
 import React from "react";
-import kidsInClass from "../images/kidsInClass.jpg";
+import hero from "../images/ff-13.jpg";
 
 const Hero = () => {
   const bgImg = {
-    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${kidsInClass})`,
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${hero})`,
     backgroundSize: "cover",
   };
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import familyImg from "../images/family.jpg";
+import signupImg from "../images/event-2.jpg";
 import FormRow from "../components/FormRow";
 import Alert from "../components/Alert";
 import { useAuthContext } from "../hooks/useAuthContext";
@@ -53,11 +53,11 @@ const Signup = () => {
       <div className="sm:block hidden relative ">
         <img
           className="w-full h-screen object-cover inset-0 absolute"
-          src={familyImg}
+          src={signupImg}
           alt="family"
         />
-        <div className="absolute inset-0 bg-slate-900 bg-opacity-50"></div>
-        <div className="absolute text-white text-center top-[30%] left-[50%] -translate-x-[50%] ">
+        <div className="absolute inset-0 bg-slate-900 bg-opacity-30"></div>
+        <div className="absolute text-white text-center top-[40%] left-[50%] -translate-x-[50%] ">
           <h1 className="font-['Lobster'] my-4 text-4xl whitespace-nowrap">
             Welcome to my Website
           </h1>

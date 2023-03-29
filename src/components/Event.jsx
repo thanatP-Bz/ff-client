@@ -1,23 +1,21 @@
 import React from "react";
-import eventImg from "../images/event.jpg";
+import goldie from "../images/goldie-1.JPG";
 
 const Event = () => {
   const bgImg = {
-    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${eventImg})`,
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${goldie})`,
     backgroundSize: "cover",
+    backgroundPosition: "center",
   };
   return (
-    <div className=" w-full h-[85vh]" style={bgImg}>
+    <div className=" w-full h-[90vh]" style={bgImg}>
       <div className=" flex justify-center items-center flex-col h-screen text-center text-white">
-        <h1 className="text-6xl font-bold pb-2 font-['Lobster']">
-          The good olds memories
-        </h1>
-        <p className="text-lg md:my-4 w-full max-w-[700px]">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt et
-          magnam molestias debitis, ipsa sapiente. Lorem ipsum dolor sit amet,
-          consectetur adipisicing
-        </p>
-        <button className="btn">Read More</button>
+        <button
+          class="text-white border border-white hover:border-[#10ac84]  hover:text-[#60fad4] active:border-[#74f2d3]  font-bold uppercase px-8 py-3 rounded outline-none focus:outline-none mr-1 mb-10 ease-linear transition-all duration-150"
+          type="button"
+        >
+          check out good old memory pictures
+        </button>
       </div>
     </div>
     /*   <div className=" mb-[10%] w-full h-[100vh] relative md:h-[85vh] lg:h-[85vh]">
