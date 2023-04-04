@@ -6,19 +6,19 @@ import goldie from "../images/goldie.jpg";
 const Showcase = () => {
   return (
     <div>
-      <div className="mx-[7%] pt-[10%] ">
+      <div className="mx-[7%] py-[7%]">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <div className="grid grid-cols-1 gap-2 h-2/5 md:grid-cols-2">
             <div>
               <img
-                className="h-full w-full object-cover rounded-md md:h-4/5"
+                className="h-full w-full object-cover rounded-md"
                 src={naomi}
                 alt="kid1"
               />
             </div>
             <div>
               <img
-                className="h-full w-full object-cover rounded-md md:h-4/5"
+                className="h-full w-full object-cover rounded-md"
                 src={goldie}
                 alt="kid2"
               />

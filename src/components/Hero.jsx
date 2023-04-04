@@ -5,10 +5,11 @@ const Hero = () => {
   const bgImg = {
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${hero})`,
     backgroundSize: "cover",
+    backgroundPosition: "center",
   };
 
   return (
-    <div className=" w-full h-screen" style={bgImg}>
+    <div className=" h-screen" style={bgImg}>
       <div className="mt-4 flex justify-center items-center flex-col h-screen text-center text-white">
         <h1 className="text-6xl font-bold pb-2 font-['Lobster']">
           This is Homepage

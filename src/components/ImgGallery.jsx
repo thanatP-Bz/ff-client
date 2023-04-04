@@ -24,8 +24,8 @@ const ImgGallery = () => {
         <h1 className="text-5xl font font-['Lobster'] text-center py-4 mb-10 md:mt-0 mt-20">
           Galley
         </h1>
-        <div className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          <div>
+        <div className="grid gap-2 grid-cols-1 grid-row-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div className="row">
             <button className="h-64 w-full">
               <img
                 src={k1}
@@ -164,7 +164,7 @@ const ImgGallery = () => {
             <button className="h-64 w-full ">
               <img
                 src={kid8}
-                className="h-full w-full object-cover rounded-md"
+                className="h-full w-full object-cover rounded-md "
                 alt="k8"
               />
             </button>

@@ -56,7 +56,7 @@ const Signup = () => {
           src={signupImg}
           alt="family"
         />
-        <div className="absolute inset-0 bg-slate-900 bg-opacity-30"></div>
+        <div className="absolute inset-0 bg-slate-900 bg-opacity-20"></div>
         <div className="absolute text-white text-center top-[40%] left-[50%] -translate-x-[50%] ">
           <h1 className="font-['Lobster'] my-4 text-4xl whitespace-nowrap">
             Welcome to my Website
@@ -69,7 +69,7 @@ const Signup = () => {
       </div>
 
       <div className="flex flex-col justify-center items-center mx-4 w-full md:mx-0">
-        <form onSubmit={onSubmitHandler} className="form ">
+        <form onSubmit={onSubmitHandler} className="form">
           <h3 className="form-h3">Sign Up</h3>
           {showAlert && <Alert />}
 
