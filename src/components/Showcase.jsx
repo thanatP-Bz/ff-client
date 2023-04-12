@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import naomi from "../images/naomi.jpg";
 import goldie from "../images/goldie.jpg";
 
@@ -34,7 +34,9 @@ const Showcase = () => {
               illo iusto doloribus explicabo commodi cum! Cumque odio voluptatem
               molestias deleniti?
             </p>
-            <button className="btn">Read More</button>
+            <Link to="/about">
+              <button className="btn">Read More</button>
+            </Link>
           </div>
         </div>
       </div>

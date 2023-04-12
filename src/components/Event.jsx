@@ -1,5 +1,6 @@
 import React from "react";
 import goldie from "../images/goldie-1.JPG";
+import { Link } from "react-router-dom";
 
 const Event = () => {
   const bgImg = {
@@ -8,14 +9,16 @@ const Event = () => {
     backgroundPosition: "center",
   };
   return (
-    <div className=" w-full h-[90vh]" style={bgImg}>
+    <div className=" w-full mt-[7%] h-[90vh]" style={bgImg}>
       <div className=" flex justify-center items-center flex-col h-screen text-center text-white">
-        <button
-          class="text-white border border-white hover:border-[#10ac84]  hover:text-[#60fad4] active:border-[#74f2d3]  font-bold uppercase px-8 py-3 rounded outline-none focus:outline-none mr-1 mb-10 ease-linear transition-all duration-150"
-          type="button"
-        >
-          check out good old memory pictures
-        </button>
+        <Link to="/gallery">
+          <button
+            class="text-white border border-white hover:border-[#10ac84]  hover:text-[#60fad4] active:border-[#74f2d3]  font-bold uppercase px-8 py-3 rounded outline-none focus:outline-none mr-1 mb-10 ease-linear transition-all duration-150"
+            type="button"
+          >
+            check out good old memory pictures
+          </button>
+        </Link>
       </div>
     </div>
     /*   <div className=" mb-[10%] w-full h-[100vh] relative md:h-[85vh] lg:h-[85vh]">

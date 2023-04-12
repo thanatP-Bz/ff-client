@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import {
   Home,
   Login,
@@ -9,48 +9,48 @@ import {
   ProtectedRoutes,
 } from "./pages/index";
 
+import ScrollToTop from "./ScrollToTop";
+
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <ProtectedRoutes>
-              <Home />
-            </ProtectedRoutes>
-          }
-        />
-        <Route
-          path="/gallery"
-          element={
-            <ProtectedRoutes>
-              <Gallery />
-            </ProtectedRoutes>
-          }
-        />
-        <Route
-          path="/about"
-          element={
-            <ProtectedRoutes>
-              <About />
-            </ProtectedRoutes>
-          }
-        />
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <ProtectedRoutes>
+            <Home />
+          </ProtectedRoutes>
+        }
+      />
+      <Route
+        path="/gallery"
+        element={
+          <ProtectedRoutes>
+            <Gallery />
+          </ProtectedRoutes>
+        }
+      />
+      <Route
+        path="/about"
+        element={
+          <ProtectedRoutes>
+            <About />
+          </ProtectedRoutes>
+        }
+      />
 
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
 
-        <Route
-          path="/profile"
-          element={
-            <ProtectedRoutes>
-              <Profile />
-            </ProtectedRoutes>
-          }
-        />
-      </Routes>
-    </BrowserRouter>
+      <Route
+        path="/profile"
+        element={
+          <ProtectedRoutes>
+            <Profile />
+          </ProtectedRoutes>
+        }
+      />
+    </Routes>
   );
 }
 
